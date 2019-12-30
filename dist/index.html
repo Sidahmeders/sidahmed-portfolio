@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>Boutarra SidAhmed portfolio</title>
+</head>
+<body>
+ 
+<div id="btn" class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+    
+<header>
+
+    <nav id="nav-links" class="nav-links">
+        <div><a href="./index.html">HOME</a></div>
+        <div><a href="about.html">ABOUT ME</a> </div>
+        <div><a href="">MY PROJECTS</a></div>
+        <div><a href="">CONTACT</a></div>
+    </nav>
+
+    <div id="nav-text" class="nav-text">
+        <div>
+            <p> <span class="name">SidAhmed Boutarra</span>  { Full_Stack Engineer } </p>
+            <ul>
+                <li><i class="fas fa-code"></i>Programmer</li>
+                <li><i class="fas fa-laptop-code"></i>Web Developer</li>
+                <li><i class="fas fa-pencil-ruler"></i>Software Engineer</li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+<main class="main-index">
+
+    <div class="main-index-img">
+        <div class="code-text">
+            function rot13(str) { // LBH QVQ VG!
+                let rot1 = ['A','B','C','D','E','F','G','H','J','I','K','L','M'];
+                let rot2 = ['N','O','P','Q','R','S','T','U','W','V','X','Y','Z'];
+                let cipher = str.split(''); 
+                let result = [];
+                for (let i = 0; i < cipher.length; i++) {
+                for (let y = 0; y < rot1.length; y++) { 
+                    if(cipher[i] === rot1[y]) { 
+                    result.push(rot2[y]);
+                    } 
+                    if(cipher[i] === rot2[y]) {
+                        result.push(rot1[y]);
+                    }
+                    } 
+                    if(cipher[i].match(/\W/)) {
+                    result.push(cipher[i]);
+                    }
+                }
+                
+                return result.join('');
+                }function convertToRoman(num) {
+                    let Symbol = ['M','CM','D','CD','C','XC','L','XL','X','IX','V','IV','I'];
+                    let nums = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+                    let somthin = '';
+                    for(let i = 0; i < nums.length; i++) {
+                        while(nums[i] <= num) {
+                            somthin += Symbol[i];
+                            num -= nums[i];
+                        }
+                    }
+            return somthin;
+            }
+            function convertToRoman(num) {
+                let Symbol = {M:1000, CM:900, D:500, CD:400, C:100, XC:90, L:50, XL:40, X:10, IX:9, V:5, IV:4, I:1};	
+                let roman = '';
+                for (let key in Symbol) {
+                    while(num >= Symbol[key]) {
+                        roman += key;
+                        num -= Symbol[key];
+                    }
+                }
+                return roman;
+                }
+                
+            convertToRoman(36);
+            function palindrome(str) {
+            let revStr = str.toLowerCase().replace(/[^\w\d]/g,'').replace(/[_]/g,'').split('').reverse().join('')
+            let str1 =  str.toLowerCase().replace(/[^\w\d]/g,'').replace(/[_]/g,'');
+            function sumFibs(num) {
+                Array.prototype.last = function() { return this[this.length-1]};
+                Array.prototype.beforeLast = function() { return this[this.length-2]};
+                let sum = [1,1];
+                while(sum.beforeLast() + sum.last() <= num) {
+                sum.push(sum.beforeLast() + sum.last());
+                }
+            return sum.filter(i => { 
+                return i % 2 !== 0;
+            }).reduce((a,b) => a + b);
+            }
+            function fearNotLetter(str) {
+                let nofear = '';
+                let alphabet = "abcdefghijklmnopqrstuvwxyz";
+                let index1 = alphabet.indexOf(str[0]);
+                let index2 = str[str.length-1];
+                let index3 = alphabet.indexOf(index2);
+                let str2 = alphabet.slice(index1,index3+1);
+                for(let i = index1; i < index3; i++) {
+                if(str.search(alphabet[i]) == -1) {
+                    nofear += alphabet[i];
+                }
+                }
+            if(nofear) {
+                return nofear;
+            }
+            return undefined;
+            }
+            
+            fearNotLetter("stvwx");
+            function myReplace(str, before, after) {
+                let afterUp = after.charAt(0).toUpperCase()+after.slice(1);
+                if(before.charCodeAt(0) >= 65 && before.charCodeAt(0) <= 90) {
+                return str.replace(before,afterUp);
+                }
+                return str.replace(before,after);
+                }max = -Infinity, min = +Infinity;
+                let numbers = [12,52,95,35,55,145,25,55,65,24,85,49,15,264,254];
+                for (var i = 0; i < numbers.length; i++) {
+                if (numbers[i] > max) {
+                    max = numbers[i];
+                }
+                if (numbers[i] < min) {
+                    min = numbers[i];
+                }
+                }
+                function averageRating(watchlist,director) {
+                let arrayRating = [];
+                watchlist.forEach(n => {
+                let rating = parseFloat(n["imdbRating"]); 
+                if(director === n["Director"]) {
+                    arrayRating.push(rating);
+                }
+                });
+                let avareageArray = arrayRating.reduce((x,y) => x+y)/arrayRating.length;
+                return avareageArray;
+                }
+                
+                var averageRating = averageRating(watchList,"Christopher Nolan");
+                
+                console.log(averageRating); 
+                var tier = "nsfw deck";
+                var output = "You’ll receive "
+            
+            switch (tier) {
+              case "deck of legends":
+                output += "a custom card, ";
+              case "collector's deck":
+                output += "a signed version of the Exploding Kittens deck, ";
+              case "nsfw deck":
+                output += "one copy of the NSFW (Not Safe for Work) Exploding Kittens card game and ";
+              default:
+                output += "one copy of the Exploding Kittens card game.";
+            }
+            
+            console.log(output);
+            
+            
+            var prize = "";
+            
+            switch (winner) {
+              case 1:
+                prize += "a trip for two to the Bahamas and ";
+              case 2:
+                prize += "a four piece furniture set.";
+                break;
+              case 3:
+                prize += "a smartwatch and ";
+              default:
+                prize += "tickets to the circus.";
+            }
+            
+            console.log("You've won " + prize)
+        </div>
+    </div>
+
+    <section class="sect-1">
+        <div class="bg-back"></div>
+        <div class="sm-img"></div>
+        <div class="main-text">
+            <h1>
+                HI, I Am Sidahmed Boutaraa 
+                <span class="txtSpan" dataWords='["programmer","web_developer","software_engineer"]'></span> 
+            </h1>
+            <p>the one who can solve any problem</p>
+        </div>
+    </section>
+
+    <section class="sect-2">
+        <div class="animation-area">
+            <ul class="box-area">
+                <li><i class="fab fa-node-js"></i></li>
+                <li><i class="fab fa-js-square"></i></li>
+                <li><i class="fab fa-react"></i></li>
+                <li><i class="fab fa-html5"></i></li>
+                <li><i class="fab fa-css3"></i></li>
+                <li><i class="fab fa-python"></i></li>
+            </ul>
+        </div>
+    </section>
+    
+</main>
+
+
+
+
+
+
+<script src="./js/main.js"></script>
+</body>
+</html>
