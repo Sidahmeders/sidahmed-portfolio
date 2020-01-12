@@ -1,6 +1,6 @@
 .main-about {
   overflow-y: scroll;
-  background-color: #e6e6e6;
+  background: linear-gradient(45deg, #a5a0a0, #424040);
   color: #161616;
   font-size: 1.5em;
   height: 100vh;
@@ -9,36 +9,50 @@
 
 .main-about h1 {
   letter-spacing: 5px;
-  padding-top: .5em;
+  padding-top: .8em;
   padding-bottom: .7em;
+  text-shadow: 1px 1px 3px white;
 }
 
-.main-about hr {
-  margin: 1em 0;
-}
-
-.main-about-text {
+.main-about-text-1, .main-about-text-2 {
   padding: 1em;
   color: black;
   background: white;
 }
 
-.main-about-text p {
+.main-about-text-1 p, .main-about-text-2 p {
   padding: 3px 0;
 }
 
-.main-about-text h3 {
+.main-about-text-1 h3, .main-about-text-2 h3 {
   padding: 2vmin 0;
 }
 
-.main-about-text ul {
+.main-about-text-1 ul, .main-about-text-2 ul {
   padding: 2vmin;
   list-style: none;
 }
 
-.main-about-text ul li {
+.main-about-text-1 ul li, .main-about-text-2 ul li {
   color: #0f0f1d;
   padding: 2vmin;
+}
+
+.main-about-text-1 .card {
+  padding: 1em 0;
+}
+
+.main-about-text-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  text-align: center;
+}
+
+.main-about-text-2 .card {
+  border: 2px solid #afafaf;
+  margin: 5px;
 }
 
 .main-about-cards {

@@ -1,23 +1,33 @@
 .main-contacts {
   overflow-y: scroll;
-  background-color: #e6e6e6;
+  background: linear-gradient(45deg, #a5a0a0, #424040);
   color: #161616;
   height: 100vh;
   padding: 1em;
 }
 
 .main-contacts h1 {
-  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 2.7em;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 3px white;
 }
 
 .main-contacts-cards {
-  font-size: 1.5em;
+  font-size: 1.8em;
+  padding: .3em 1.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .main-contacts-cards .contact-item {
-  margin-top: 25px;
-  border-bottom: 1px solid grey;
-  display: block;
+  padding: 1em;
+  border: 1px solid rgba(192, 192, 192, 0.719);
+  margin: 5px;
+  background: white;
 }
 
 .main-contacts-cards .contact-item a {
@@ -35,11 +45,11 @@
 }
 
 .main-contacts-cards .contact-item .fa-user-circle {
-  color: #5a3b18;
+  color: #f0ad60;
 }
 
 .main-contacts-cards .contact-item .fa-envelope {
-  color: green;
+  color: #791604;
 }
 
 .main-contacts-cards .contact-item .fa-facebook {
@@ -48,5 +58,9 @@
 
 .main-contacts-cards .contact-item .fa-linkedin {
   color: #0d4566;
+}
+
+.main-contacts-cards .contact-item .phone, .main-contacts-cards .contact-item .email {
+  color: #00e01e;
 }
 /*# sourceMappingURL=contact.css.map */

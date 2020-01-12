@@ -1,32 +1,43 @@
 
 .main-contacts {
     overflow-y: scroll;
-    background-color: rgb(230, 230, 230);
+    // background-color: rgb(230, 230, 230);
+    background: linear-gradient(45deg,rgb(165, 160, 160), rgb(66, 64, 64));
     color: rgb(22, 22, 22);
     height: 100vh; 
     padding: 1em;
 
     h1 {
-        margin-top: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: 2.7em;
+        letter-spacing: 4px;
+        text-shadow: 1px 1px 3px white;
     }
 
     &-cards {
-        font-size: 1.5em;
+        font-size: 1.8em;
+        padding: .3em 1.5em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
         .contact-item {
-            margin-top: 25px;
-            border-bottom: 1px solid grey;
-            display: block;
+            padding: 1em;
+            border: 1px solid rgba(192, 192, 192, 0.719);
+            margin: 5px;
+            background: white;
             a{
                 text-decoration: none; color: rgb(62, 132, 173);
                 &:hover {color: rgb(60, 140, 214);}
             }
             
             i {font-size: 2em; display: block;}
-            .fa-user-circle { color: rgb(90, 59, 24);}
-            .fa-envelope { color: green;}
+            .fa-user-circle { color: rgb(240, 173, 96);}
+            .fa-envelope { color: rgb(121, 22, 4);}
             .fa-facebook { color: blue;}
             .fa-linkedin { color: rgb(13, 69, 102);}
+            
+            .phone, .email { color: rgb(0, 224, 30);}
         }
     }
 }

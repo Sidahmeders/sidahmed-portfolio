@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Courier+Prime&display=swap');
 
-
 * {
     margin: 0; 
     padding: 0;
@@ -9,7 +8,7 @@
 body {
     overflow: hidden;
     background: rgb(255, 255, 255);
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @import './mxin_func';

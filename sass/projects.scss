@@ -5,27 +5,29 @@
     height: 100vh;
     position: absolute;
     z-index: -9;
+    background: linear-gradient(45deg,rgb(165, 160, 160), rgb(66, 64, 64));
 
     h1 {
         padding: 1em 2em;
         font-size: 2.5em;
         letter-spacing: 5px;
         transform: translate(1px, 1px);
-        background: rgba(49, 49, 49, 0.171);
+        text-shadow: 1px 1px 3px white;
     }
 
     &-cards {
-        padding-top: 3em;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-auto-rows: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 5px;
         text-align: center;
-        margin: 0 1.5em;
+        margin: 0 1.5em 1em;
+        padding: 2em 1em 0;
+        background: white;
 
         .card-item {
             padding: 3px 6px;
-            transition: .3s ease-in-out;
+            transition: .5s ease-in-out;
             img {
                 width: 100%;
                 height: auto;
