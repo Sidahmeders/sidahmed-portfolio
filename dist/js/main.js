@@ -53,8 +53,6 @@ typeWriter.prototype.type = function() {
         }
     }
     
-    console.log(this.text)
-
     this.txtElement.innerHTML = `<span class="inner-spanTxt">${this.text}<span>`;
 
     setTimeout(() => {
@@ -67,49 +65,10 @@ document.addEventListener('DOMContentLoaded', init);
 
 function init() {
     const spanText = document.querySelector('.txtSpan');
-    const spanWords = JSON.parse(spanText.getAttribute('dataWords'));
-
-    new typeWriter(spanText, spanWords);
+    if(spanText !== null) {
+        const spanWords = JSON.parse(spanText.getAttribute('dataWords'));
+        new typeWriter(spanText, spanWords);
+    } 
 }
-
-
-
-
-
-// let guns = ['AWSG452', 'magnom76', 'silverThung'];
-// let index = 0;
-// let word = "";
-// let isTrue = false;
-// let current = 0;
-
-// function typer() {
-
-// if (!isTrue) {
-//     word = guns[index].substring(0, current+1);
-//     current ++;
-//     if(current === guns[index].length) isTrue = true;
-// } else {
-//     word = word.substring(0, current-1);
-//     current--
-//     if(current === 0) {
-//          isTrue = false; 
-//          if (index < guns.length) {
-//              index++
-//          }
-//          if (index == guns.length) {
-//              index = 0
-//          }
-//         }
-// }
-
-// console.log(word)
-
-// setTimeout(() => {
-//     typer()
-// },500)
-
-// }
-
-
 
 

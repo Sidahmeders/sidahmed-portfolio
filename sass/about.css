@@ -1,8 +1,55 @@
 .main-about {
-  background-color: #657070;
-  color: white;
+  overflow-y: scroll;
+  background-color: #e6e6e6;
+  color: #161616;
   font-size: 1.5em;
   height: 100vh;
   padding: 1em;
+}
+
+.main-about h1 {
+  letter-spacing: 5px;
+  padding-top: .5em;
+  padding-bottom: .7em;
+}
+
+.main-about hr {
+  margin: 1em 0;
+}
+
+.main-about-text {
+  padding: 1em;
+  color: black;
+  background: white;
+}
+
+.main-about-text p {
+  padding: 3px 0;
+}
+
+.main-about-text h3 {
+  padding: 2vmin 0;
+}
+
+.main-about-text ul {
+  padding: 2vmin;
+  list-style: none;
+}
+
+.main-about-text ul li {
+  color: #0f0f1d;
+  padding: 2vmin;
+}
+
+.main-about-cards {
+  margin: 1em 0;
+  padding: 1em;
+  color: black;
+  background: white;
+}
+
+.main-about-cards p {
+  font-size: 1.3em;
+  padding: 5px;
 }
 /*# sourceMappingURL=about.css.map */

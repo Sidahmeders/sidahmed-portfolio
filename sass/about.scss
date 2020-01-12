@@ -1,8 +1,41 @@
 
 .main-about {
-    background-color: rgb(101, 112, 112);
-    color: white;
+    overflow-y: scroll;
+    background-color: rgb(230, 230, 230);
+    color: rgb(22, 22, 22);
     font-size: 1.5em;
-    height: 100vh;
+    height: 100vh; 
     padding: 1em;
+    
+    h1{letter-spacing: 5px; padding-top: .5em; padding-bottom: .7em;}
+    hr{margin: 1em 0;}
+
+    &-text {
+        padding: 1em;
+        color: rgb(0, 0, 0);
+        background: rgb(255, 255, 255);
+        
+        p {padding: 3px 0;}
+        h3 {padding: 2vmin 0;}
+        ul {padding: 2vmin;list-style: none;
+        li{color: rgb(15, 15, 29); padding: 2vmin;}
+        }
+    }
+
+    &-cards {
+        margin: 1em 0;
+        padding: 1em;
+        color: rgb(0, 0, 0);
+        background: rgb(255, 255, 255);
+
+        p {
+            font-size: 1.3em;
+            padding: 5px;
+        }
+    }
 }
+
+
+
+
+

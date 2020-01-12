@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Courier+Prime&display=swap');
 
+
 * {
     margin: 0; 
     padding: 0;
 }
- 
+
 body {
     overflow: hidden;
     background: rgb(255, 255, 255);
@@ -12,32 +13,36 @@ body {
 }
 
 @import './mxin_func';
+@import './mobile';
 @import './menu';
 @import './about.scss';
+@import './projects.scss';
+@import './contact.scss';
 
 
 .main-index {
     font-size: 1.5em;
     text-align: center;
-    color: white;
+    color: white; 
 
-    &-img {
-        background: url(../img/connection-data-desk-1181675.jpg);
+    &-img { 
         background-size: cover;
         position: fixed;
         top: 0;
+        background: rgb(4, 36, 9);
         left: 0;
         width: 100%;
         height: 100vh;
-        z-index: -3;
+        z-index: -99;
         opacity: 0.7;
 
-        .code-text {
-            opacity: 0.5;
+        .code-binary {
+            opacity: .2;
             color: rgb(0, 255, 13);
-            animation: coding 1s linear infinite;
+            animation: coding 2s linear infinite;
+            font-size: 1.5em;
         }
-
+ 
         @keyframes coding {
             from{}
             to{transform: translate(0, -100px);}
@@ -45,7 +50,7 @@ body {
     }
 
     .sect-1 {
-        .bg-back {
+        .left-background {
             width: 50%;
             height: 100vh;
             position: absolute;
@@ -53,9 +58,17 @@ body {
             background: rgb(65, 65, 65);
             background-size: cover;
             opacity: 0.9;
+
+            p {
+                margin-top: 10em;
+                color: rgba(255, 255, 255, 0.801);
+                letter-spacing: 5px;
+                word-wrap: break-word;
+                opacity: .1;
+            }
         }
     
-        .sm-img {
+        .right-img {
             width: 50%;
             height: 100vh;
             position: absolute;
@@ -66,24 +79,24 @@ body {
             background-size: cover;
             opacity: 0.7;
         }
-        
-        h1 {
-            padding-top: 40px;
-            color: rgb(255, 255, 255);
-            .inner-spanTxt {
-                border-right: 2px solid rgba(55, 255, 37, 0.918);
-                padding-right: 4px;
-                color: rgb(53, 253, 53);
-            }
-        }
-    
+
         .main-text {
             float: left;
             padding-left: 3em;
-            
+ 
+            h1 {
+                padding-top: 40px;
+                color: rgb(255, 255, 255);
+                .inner-spanTxt {
+                    border-right: 2px solid rgba(55, 255, 37, 0.918);
+                    padding-right: 4px;
+                    color: rgb(53, 253, 53);
+                }
+            }
             p {
                 text-align: left;
                 color: rgb(215, 219, 213);
+                text-shadow: 2px 2px 7px black;
             }
         }
     }
@@ -96,8 +109,8 @@ body {
             .box-area {
                 position: absolute;
                 top: 0;
-                left: 21%;
-                width: 50%;
+                left: 0;
+                width: 100%;
                 height: 100%;
                 overflow: hidden;
                 z-index: -1;
@@ -107,7 +120,6 @@ body {
                     display: block;
                     list-style: none;
                     font-size: 3em;
-                    border-radius: 5%;
                     animation: animate 5s linear infinite alternate;
                 }
 
@@ -117,36 +129,37 @@ body {
 
                 li:nth-child(1) {
                     color: rgb(10, 167, 18);
-                    left: 15%;
+                    left: 12%;
                     top: 70%;
+                    animation-duration: 5.1s;
                     animation-name: animate;
                 }
                 li:nth-child(2) {
                     color: rgb(238, 255, 0);
-                    left: 30%;
+                    left: 25%;
                     top: 70%;
                     animation-duration: 4.5s;
                     animation-name: animate;
                 }
                 li:nth-child(3) {
                     color: rgb(84, 113, 243);
-                    left: 45%;
+                    left: 38%;
                     top: 70%;
-                    animation-duration: 4s;
+                    animation-duration: 3.7s;
                     animation-name: animate;
                 }
                 li:nth-child(4) {
                     color: rgb(187, 8, 8);
-                    left: 60%;
+                    left: 55%;
                     top: 70%;
-                    animation-duration: 5s;
+                    animation-duration: 4.8s;
                     animation-name: animate;
                 }
                 li:nth-child(5) {
                     color: darkblue;
-                    left: 75%;
+                    left: 68%;
                     top: 70%;
-                    animation-duration: 6s;
+                    animation-duration: 4.2s;
                     animation-name: animate;
                 }
                 li:nth-child(6) {
@@ -155,7 +168,7 @@ body {
                     width: 70px;
                     height: 70px;
                     border-radius: 30%;
-                    left: 90%;
+                    left: 81%;
                     top: 70%;
                     animation-duration: 5.5s;
                     animation-name: animate;
@@ -164,6 +177,5 @@ body {
         }
     }
 }
-
 
 

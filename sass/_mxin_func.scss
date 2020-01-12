@@ -4,5 +4,31 @@
 }
 
 @mixin shadow {
-    box-shadow: 1px 2px 7px rgb(20, 37, 192);
+    box-shadow: 1px 2px 7px rgb(30, 31, 2);
 }
+
+
+@mixin mediaLg {
+    @media (max-width: 1050px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin mediaSm {
+    @media (max-width: 740px) {
+        @content;
+    }
+}
+
+@mixin mediaXsm {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
