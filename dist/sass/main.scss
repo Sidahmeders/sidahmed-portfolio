@@ -41,7 +41,7 @@ body {
             animation: coding 2s linear infinite;
             font-size: 1.5em;
         }
- 
+
         @keyframes coding {
             from{}
             to{transform: translate(0, -100px);}
