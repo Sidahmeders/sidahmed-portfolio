@@ -1,7 +1,6 @@
 
 .main-contacts {
     overflow-y: scroll;
-    // background-color: rgb(230, 230, 230);
     background: linear-gradient(45deg,rgb(165, 160, 160), rgb(66, 64, 64));
     color: rgb(22, 22, 22);
     height: 100vh; 
@@ -37,7 +36,7 @@
             .fa-facebook { color: blue;}
             .fa-linkedin { color: rgb(13, 69, 102);}
             
-            .phone, .email { color: rgb(0, 224, 30);}
+            .phone, .email { color: rgb(0, 224, 30); text-shadow: 1px 1px 2px rgb(0, 0, 0);}
         }
     }
 }

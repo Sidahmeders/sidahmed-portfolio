@@ -127,11 +127,15 @@
             background: rgba(31, 1, 1, 0.404) !important;
         }
     }
+    .main-contacts-cards {
+        font-size: 1.6em !important;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+    }
 }
 
 @include mediaXsm {
     .nav-links {
-        font-size: .9em !important;
+        font-size: .8em !important;
         div {top: 0% !important; left: 1% !important;}
     }
     .nav-text {
@@ -164,6 +168,18 @@
             width: 37px !important;
             height: 37px !important;
         }
+    }
+    .main-projects-cards {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+    }
+    .main-about-text-2 {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+    }
+    .main-contacts-cards {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+        font-size: 1.3em !important;
+        margin-bottom: 1em !important;
+        padding: 0 !important;
     }
 }
 
