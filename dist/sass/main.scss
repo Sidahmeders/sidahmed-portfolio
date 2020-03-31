@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 * {
     margin: 0; 
@@ -8,7 +8,7 @@
 body {
     overflow: hidden;
     background: rgb(255, 255, 255);
-    font-family: 'Comfortaa', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @import './mxin_func';
@@ -74,7 +74,7 @@ body {
             left: 50%;
             top: 0%;
             z-index: -1;
-            background: url(../img/face-facial-hair-fine-looking-guy-614810.jpg);
+            background: url('../img/Mask_off-7701d441-cf8a-4b93-8b93-cc5b337c65ea.jpg');
             background-size: cover;
             opacity: 0.7;
         }
@@ -87,9 +87,9 @@ body {
                 padding-top: 40px;
                 color: rgb(255, 255, 255);
                 .inner-spanTxt {
-                    border-right: 2px solid rgba(55, 255, 37, 0.918);
+                    border-right: 2px solid rgba(37, 255, 237, 0.918);
                     padding-right: 4px;
-                    color: rgb(53, 253, 53);
+                    color: rgb(53, 240, 253);
                 }
             }
             p {
@@ -130,35 +130,35 @@ body {
                     color: rgb(10, 167, 18);
                     left: 12%;
                     top: 70%;
-                    animation-duration: 5.1s;
+                    animation-duration: 51s;
                     animation-name: animate;
                 }
                 li:nth-child(2) {
                     color: rgb(238, 255, 0);
                     left: 25%;
                     top: 70%;
-                    animation-duration: 4.5s;
+                    animation-duration: 45s;
                     animation-name: animate;
                 }
                 li:nth-child(3) {
                     color: rgb(84, 113, 243);
                     left: 38%;
                     top: 70%;
-                    animation-duration: 3.7s;
+                    animation-duration: 39s;
                     animation-name: animate;
                 }
                 li:nth-child(4) {
                     color: rgb(187, 8, 8);
                     left: 55%;
                     top: 70%;
-                    animation-duration: 4.8s;
+                    animation-duration: 48s;
                     animation-name: animate;
                 }
                 li:nth-child(5) {
                     color: darkblue;
                     left: 68%;
                     top: 70%;
-                    animation-duration: 4.2s;
+                    animation-duration: 42s;
                     animation-name: animate;
                 }
                 li:nth-child(6) {
@@ -169,10 +169,41 @@ body {
                     border-radius: 30%;
                     left: 81%;
                     top: 70%;
-                    animation-duration: 5.5s;
+                    animation-duration: 55s;
                     animation-name: animate;
                 }
             }
+        }
+    }
+    .sect-3 {
+        position: absolute;
+        left: 0;
+        bottom: -10%;
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        transition: .6s ease;
+
+        a {
+            text-decoration: none;
+            border: 1px solid rgb(255, 255, 255);
+            font-size: 1em;
+            display: inline-block;
+            width: 22vw;
+            padding: 6px 0;
+            color: rgb(85, 193, 255);
+            background-color: rgb(44, 44, 44);
+            transition: .6s ease;
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(224, 224, 224);
+                color: rgb(49, 49, 49);
+            }
+        }
+        &.hide {
+            opacity: 0;
+            visibility: hidden;
         }
     }
 }

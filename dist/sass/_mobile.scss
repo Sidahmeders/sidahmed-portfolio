@@ -18,16 +18,14 @@
         p {margin-top: 15em !important;}
     }
     .right-img {
-        height: 50vh !important;
-        opacity: 1 !important;
+        display: none;
     }
     .code-binary {
-        width: 50% !important;
-        overflow: hidden !important;
-        position: absolute !important;
-        bottom: -20% !important;
-        right: 0 !important;
-        z-index: -9 !important;
+        display: none;
+    }
+    .main-index-img {
+        background: url('../img/Mask_off-7701d441-cf8a-4b93-8b93-cc5b337c65ea.jpg') !important;
+        background-size: cover !important;
     }
     .main-text {
 

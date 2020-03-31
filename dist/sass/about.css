@@ -1,6 +1,6 @@
 .main-about {
   overflow-y: scroll;
-  background: linear-gradient(45deg, #a5a0a0, #424040);
+  background: #4e4e4e;
   color: #161616;
   font-size: 1.5em;
   height: 100vh;
@@ -11,13 +11,13 @@
   letter-spacing: 5px;
   padding-top: .8em;
   padding-bottom: .7em;
-  text-shadow: 1px 1px 3px white;
+  color: whitesmoke;
 }
 
 .main-about-text-1, .main-about-text-2 {
   padding: 1em;
-  color: black;
-  background: white;
+  color: #40c5c5;
+  background: #464646;
 }
 
 .main-about-text-1 p, .main-about-text-2 p {
@@ -34,7 +34,7 @@
 }
 
 .main-about-text-1 ul li, .main-about-text-2 ul li {
-  color: #0f0f1d;
+  color: #d4ecfc;
   padding: 2vmin;
 }
 
@@ -59,7 +59,7 @@
   margin: 1em 0;
   padding: 1em;
   color: black;
-  background: white;
+  background: #eeeeee;
 }
 
 .main-about-cards p {

@@ -5,7 +5,7 @@
   height: 100vh;
   position: absolute;
   z-index: -9;
-  background: linear-gradient(45deg, #a5a0a0, #424040);
+  background: #4e4e4e;
 }
 
 .main-projects h1 {
@@ -14,7 +14,7 @@
   letter-spacing: 5px;
   -webkit-transform: translate(1px, 1px);
           transform: translate(1px, 1px);
-  text-shadow: 1px 1px 3px white;
+  color: whitesmoke;
 }
 
 .main-projects-cards {
@@ -46,7 +46,7 @@
   text-decoration: none;
   padding: 7px;
   border-radius: 50%;
-  background: #b8941f;
+  background: #3a3a3a;
   display: inline-block;
   -webkit-transform: translate(0, -50px);
           transform: translate(0, -50px);
@@ -59,7 +59,7 @@
 }
 
 .main-projects-cards .card-item .btn:hover {
-  background: #cecb19;
+  background: #9b9b9a;
 }
 
 .main-projects-cards .card-item:hover {

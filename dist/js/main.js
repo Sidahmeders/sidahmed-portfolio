@@ -1,6 +1,7 @@
 let button = document.getElementById('btn');
 let navLinks = document.getElementById('nav-links');
 let navText = document.getElementById('nav-text');
+let bottomLinks = document.getElementById('bottom-links');
 let toggle = true;
 
 button.addEventListener('click', showNav)
@@ -10,11 +11,17 @@ function showNav() {
         button.classList.add('cross');
         navLinks.classList.add('show');
         navText.classList.add('show');
+        if(bottomLinks) {
+            bottomLinks.classList.add('hide');
+        }
         toggle = false;
     } else {
         button.classList.remove('cross');
         navLinks.classList.remove('show');
         navText.classList.remove('show');
+        if(bottomLinks) {
+            bottomLinks.classList.remove('hide');
+        }
         toggle = true;
     }
 }
@@ -68,7 +75,7 @@ function init() {
     if(spanText !== null) {
         const spanWords = JSON.parse(spanText.getAttribute('dataWords'));
         new typeWriter(spanText, spanWords);
-    } 
+    }
 }
 
 

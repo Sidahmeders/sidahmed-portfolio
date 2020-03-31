@@ -9,7 +9,7 @@
         display: block;
         width: 42px;
         height: 5px;
-        background: rgb(241, 245, 16);
+        background: rgb(64, 197, 197);
         margin-bottom: 6px;
         @include shadow;
         @include ease;
@@ -19,12 +19,10 @@
         span:nth-child(1) {
             transform: rotate(45deg) translate(6px, 8px);
             @include ease;
-            @include shadow;
         }
         span:nth-child(2) {
             transform: rotate(-48deg) translate(-2px, -3px);
             @include ease;
-            @include shadow;
         }
         span:nth-child(3) {
             display: none;
@@ -46,7 +44,7 @@ header {
         height: 90vh;
         display: flex;
         transform: translate(1000px, -700px);
-        transition: 1s ease-in-out;
+        transition: .7s ease-in-out;
 
         div {
             padding: 20px 30px;
@@ -62,12 +60,9 @@ header {
                 display: block;
 
                 &:hover {
-                    color: yellow;
-                    text-shadow: 1px 1px 6px rgb(5, 5, 2);
+                    color: rgb(64, 197, 197);
                     cursor: pointer;
-                    transform: translate(1px, -2px);
                     height: 40px;
-                    @include ease;
                 }
             }
         }
@@ -82,7 +77,7 @@ header {
         height: 100vh;
         top: 12%;
         transform: translate(-1000px, 700px);
-        transition: 1s ease-in-out;
+        transition: .7s ease-in-out;
     
         div {
             position: absolute;
@@ -94,11 +89,11 @@ header {
             p {
                 padding-left: 1em;
                 color: rgb(248, 248, 248);
-                text-shadow: 1px 1px 7px rgb(251, 255, 23);
+                text-shadow: 1px 1px 7px rgb(64, 197, 197);
 
                 .name {
                     font-size: 1.5em;
-                    color: rgb(228, 231, 13);
+                    color: rgb(64, 197, 197);
                     text-shadow: 1px 1px 7px rgb(0, 0, 0);
                 }
             }
@@ -110,9 +105,8 @@ header {
                  li {
                      padding-right: 22px;
                      i {
-                         color: gold;
+                         color: rgb(64, 197, 197);
                          padding-right: 5px;
-                         text-shadow: 1px 1px 7px rgb(109, 110, 3);
                      }
                  }
              }
@@ -121,7 +115,7 @@ header {
 
     .show {
         transform: translate(0px,0px);
-        transition: 1s ease-in-out;
+        transition: .7s ease-in-out;
         visibility: visible;
     }
 }

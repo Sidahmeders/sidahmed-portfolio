@@ -1,7 +1,7 @@
 
 .main-about {
     overflow-y: scroll;
-    background: linear-gradient(45deg,rgb(165, 160, 160), rgb(66, 64, 64));
+    background: rgb(78, 78, 78);
     color: rgb(22, 22, 22);
     font-size: 1.5em;
     height: 100vh; 
@@ -11,18 +11,18 @@
         letter-spacing: 5px; 
         padding-top: .8em; 
         padding-bottom: .7em; 
-        text-shadow: 1px 1px 3px white;
+        color: whitesmoke;
     }
 
     &-text-1, &-text-2 {
         padding: 1em;
-        color: rgb(0, 0, 0);
-        background: rgb(255, 255, 255);
+        color: rgb(64, 197, 197);
+        background: rgb(70, 70, 70);
         
         p {padding: 3px 0;}
         h3 {padding: 2vmin 0;}
         ul {padding: 2vmin;list-style: none;
-        li{color: rgb(15, 15, 29); padding: 2vmin;}
+        li{color: rgb(212, 236, 252); padding: 2vmin;}
         }
     }
     &-text-1 {
@@ -44,7 +44,7 @@
         margin: 1em 0;
         padding: 1em;
         color: rgb(0, 0, 0);
-        background: rgb(255, 255, 255);
+        background: rgb(238, 238, 238);
 
         p {
             font-size: 1.3em;
