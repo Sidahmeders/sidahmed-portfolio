@@ -90,6 +90,11 @@ body {
 }
 
 @media (max-width: 740px) {
+  .main-index .sect-3 a {
+    width: 30vw !important;
+    margin: 0 3vw;
+    font-size: 3.5vw !important;
+  }
   .nav-links {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;

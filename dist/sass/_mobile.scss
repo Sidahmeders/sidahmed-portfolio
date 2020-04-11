@@ -88,6 +88,11 @@
 }
 
 @include mediaSm {
+    .main-index .sect-3 a {
+        width: 30vw !important;
+        margin: 0 3vw;
+        font-size: 3.5vw !important;
+    }
     .nav-links {
         flex-direction: column !important;
         font-size: 1.3em !important;
